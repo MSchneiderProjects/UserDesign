@@ -1,0 +1,31 @@
+#keypad
+{
+	width:60%;
+}
+
+#keypad button
+{
+	width: 20%;
+}
+
+#contact_info{
+	width:60%;
+	text-align:center;
+}
+#contact_info button
+{
+	width: 20%;
+}
+
+#add_contact label{
+	float:right;
+}
+
+.hidden{
+	visibility:hidden;
+	height:0px;
+}
+
+#content button{
+	margin:10px;
+}
