@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Assignment 1</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<main  class="container">
+		<div id="box">
+		
+		</div>
+		<br>
+		<div class="row ">
+				<p class="h2">Hex Value: <span id="hex_val">#000000</span>
+		</div>
+		<br>
+		<div class="row" id="color_button">	
+			<div class="col-4 text-center">
+				<button class="btn btn-primary btn-block" onclick="changeColor('r','up')">&uarr;</button>
+				<p class="h3">RED <span id="red_box" class="badge badge-secondary">0</span></p>
+				<button class="btn btn-primary btn-block" onclick="changeColor('r','down')">&darr;</button>
+			</div>
+			<div class="col-4 text-center">
+				<button class="btn btn-primary btn-block" onclick="changeColor('g','up')">&uarr;</button>
+				<p class="h3">GREEN <span id="green_box" class="badge badge-secondary">0</span></p>
+				<button class="btn btn-primary btn-block" onclick="changeColor('g','down')">&darr;</button>
+			</div>
+			<div class="col-4 text-center">
+				<button class="btn btn-primary btn-block" onclick="changeColor('b','up')">&uarr;</button>
+				<p class="h3">BLUE <span id="blue_box" class="badge badge-secondary">0</span></p>
+				<button class="btn btn-primary btn-block" onclick="changeColor('b','down')">&darr;</button>
+			</div>
+		</div>
+		<div class="row" id="color_slider">	
+			<div class="col-12 text-center">
+				<label for="redRange">RED <span id="red_range_box" class="badge badge-secondary">0</span></label>
+				<input type="range" class="custom-range" min="0" max="255" step="10" id="redRange" onclick="slideUpdate()" value="0">
+			</div>
+			<div class="col-12 text-center">
+				<label for="greenRange">GREEN <span id="green_range_box" class="badge badge-secondary">0</span></label>
+				<input type="range" class="custom-range" min="0" max="255" step="10" id="greenRange" onclick="slideUpdate()" value="0">
+			</div>
+			<div class="col-12 text-center">
+				<label for="blueRange">BLUE <span id="blue_range_box" class="badge badge-secondary">0</span></label>
+				<input type="range" class="custom-range" min="0" max="255" step="10" id="blueRange" onclick="slideUpdate()" value="0">
+			</div>
+		</div>
+	</main>
+	<!-- Javascript Files -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	
+	<script src="project_1.js"></script>
+  </body>
+</html>
