@@ -2,7 +2,6 @@ var red = 0;
 var green = 0;
 var blue = 0;
 
-var color_code = [
 
 /* Modified From W3Schools Code for Enter Key : https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp */
 document.getElementById('redRange').addEventListener("keyup", function(event) {
