@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+
+	<head>
+
+		<title>
+
+			Gesture Demo
+
+		</title>
+
+		<link rel="stylesheet" href="gesture.css" type="text/css">
+
+	</head>
+
+	<body>
+
+		<h2 id="instructionsHeader">Instructions</h2>
+
+		<p id="instructions">To activate the swipe pad, you'll need to</p>
+		<ol>
+			<li>Click (and hold) on the pad.</li>
+			<li>Swipe in any direction</li>
+			<li>Release mouse click</li>
+		</ol>
+		<p>Please, not the system judges the swipe by comparing the start and stop positions for the down click and release.
+		If you move your mouse in more than one direction (i.e. draw a shape like a circle), the system will not be able to provide an accurate swipe description.
+		Also if your movement is too small, the system will display "No Movement".</p>
+
+		
+
+		<div id="gestureArea">
+
+
+
+		</div>
+
+		<div id="gestureResult">
+
+			No gesture.
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+
+		<script src="gesture.js" type="text/javascript"></script>
+
+	</body>
+
+</html>
